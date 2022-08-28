@@ -1,0 +1,14 @@
+
+/* Section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--no-padding-bottom {
+  padding-bottom: 0px;
+}
+
+.section--gray {
+  background-color: var(--primary-bg-color);
+}

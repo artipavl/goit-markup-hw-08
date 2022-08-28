@@ -1,0 +1,72 @@
+/* базові книпки */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  border: none;
+  border-radius: 4px;
+
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  transition: color 250ms var(--primary-animation),
+    background-color 250ms var(--primary-animation),
+    box-shadow 250ms var(--primary-animation);
+
+  &:hover,
+  &:focus,
+  &-current {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.form__button {
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+}
+
+.hero__button {
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  transition: color 250ms var(--primary-animation),
+    background-color 250ms var(--primary-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+  }
+}

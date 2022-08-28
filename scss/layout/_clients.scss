@@ -1,0 +1,34 @@
+/* Постійні клієнти */
+.company-list {
+  display: flex;
+}
+
+.company-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.company-list__linc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+
+  color: var(--primary-icon-color);
+
+  transition: color 250ms var(--primary-animation),
+    background-color 250ms var(--primary-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+// .company-list__linc .svg {
+//   margin: auto;
+// }

@@ -1,0 +1,240 @@
+/* Модальне вікно */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 250ms var(--primary-animation),
+    visibility 25000ms var(--primary-animation);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  padding: 40px;
+
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background-color: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  color: #000000;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.form-order__title {
+  display: block;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.form-order__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form-order__lable {
+  position: relative;
+
+  display: block;
+
+  transition: color 250ms var(--primary-animation);
+}
+
+.form-order__name {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.form-order__list {
+  margin-bottom: 20px;
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form-order__lable {
+  color: var(--title-text-color);
+
+  &:focus-within {
+    color: var(--accent-color);
+  }
+}
+
+.form-order__input {
+  width: 100%;
+  height: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 42px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+
+  transition: border 250ms var(--primary-animation);
+
+  .form-order__lable:focus-within > & {
+    border-color: var(--accent-color);
+  }
+}
+
+.form-order__textarea {
+  display: block;
+  height: 120px;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  resize: none;
+
+  &::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form-order__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+
+.form-order__chech {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  color: var(--title-text-color);
+}
+
+.form-order__checkbox-text {
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+
+.form-order__checkbox-linc {
+  color: var(--accent-color);
+}
+
+.form-order__check-on {
+  margin-right: 8.38px;
+
+  opacity: 0;
+
+  transition: opacity 250ms var(--primary-animation);
+
+  .form-order__checkbox:checked ~ & {
+    opacity: 1;
+  }
+}
+
+.form-order__check-off {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  transition: opacity 250ms var(--primary-animation);
+
+  .form-order__checkbox:checked ~ & {
+    opacity: 0;
+  }
+}
+
+.form-order__checkbox:focus-within ~ .form-order__checkbox-icon {
+  fill: var(--accent-color);
+  /* outline: auto; */
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+
+  transition: fill 250ms var(--primary-animation);
+}
+
+.submit-btn {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
