@@ -4,26 +4,26 @@
 }
 
 .header__container {
-  display: flex;
-  padding-top: 0;
-  padding-bottom: 0;
+  // display: flex;
+  // padding-top: 0;
+  // padding-bottom: 0;
 }
 
 /* Nav */
 .site-nav {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .site-nav__list {
-  display: flex;
+  // display: flex;
 }
 
 .site-nav__linc,
 .header-address__linc {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // display: flex;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   align-items: center;
 
   transition: color 250ms var(--primary-animation);
@@ -75,9 +75,9 @@
 }
 
 .header-address {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
+  // display: flex;
+  // margin-left: auto;
+  // align-items: center;
 }
 
 .header-address__linc {
