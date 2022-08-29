@@ -223,7 +223,7 @@
   // left: 20px;
   // top: 50%;
   // transform: translateY(-50%);
-
+  opacity: 1;
   transition: opacity 250ms var(--primary-animation);
 
   .form-order__checkbox:checked ~ .icon > & {
