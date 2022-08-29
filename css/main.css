@@ -829,6 +829,13 @@ img {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
+@media screen and (max-width: 1199px) {
+  .form-order__checkbox-text {
+    font-size: 12px;
+    line-height: 1.1667;
+    letter-spacing: 0.03em;
+  }
+}
 
 .form-order__checkbox-linc {
   color: var(--accent-color);

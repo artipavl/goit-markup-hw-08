@@ -189,13 +189,19 @@
   color: var(--title-text-color);
 }
 
-.form-order__checkbox-icon{
+.form-order__checkbox-icon {
   margin-right: 8.38px;
 }
 
 .form-order__checkbox-text {
   line-height: 1.71;
   color: var(--primary-text-color);
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.1667;
+    letter-spacing: 0.03em;
+  }
 }
 
 .form-order__checkbox-linc {
@@ -224,7 +230,6 @@
     opacity: 0;
   }
 }
-
 
 .form-order__checkbox:focus-within ~ .form-order__checkbox-icon {
   fill: var(--accent-color);
