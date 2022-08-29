@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -14,44 +17,87 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header">
       <!-- Навігація -->
       <div class="container header__container">
-        <nav class="site-nav">
-          <a href="./index.html" lang="en" class="logo header__logo">
-            <span class="logo__accent">Web</span>Studio
-          </a>
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a href="./" class="site-nav__linc site-nav__linc--current">Студія</a>
+        <a href="./index.html" lang="en" class="logo header__logo">
+          <span class="logo__accent">Web</span>Studio
+        </a>
+        <button type="button" class="menu-btn" data-menu-button>
+          <svg class="icon" width="40" height="40">
+            <use
+              class="icon-open"
+              xlink:href="./images/icons.svg#icon-twitter"
+            ></use>
+            <use
+              class="icon-close"
+              xlink:href="./images/icons.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="header__menu" data-menu>
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a href="./" class="site-nav__linc site-nav__linc--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__linc">Портфоліо</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./" class="site-nav__linc">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-address">
+            <li class="header-address__item">
+              <a href="mailto:info@devstudio.com" class="header-address__linc">
+                <svg
+                  class="icon header-address__icon-envelope"
+                  width="16"
+                  height="16"
+                >
+                  <use xlink:href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__linc">Портфоліо</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./" class="site-nav__linc">Контакти</a>
+            <li class="header-address__item">
+              <a
+                href="tel:+380961111111"
+                class="header-address__linc header-address__linc--accent"
+              >
+                <svg
+                  class="icon header-address__icon-phone"
+                  width="16"
+                  height="16"
+                >
+                  <use xlink:href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
 
-        <ul class="header-address">
-          <li class="header-address__item">
-            <a href="mailto:info@devstudio.com" class="header-address__linc">
-              <svg class="icon header-address__icon-envelope" width="16" height="16">
-                <use xlink:href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-address__item">
-            <a href="tel:+380961111111" class="header-address__linc">
-              <svg class="icon header-address__icon-phone" width="16" height="16">
-                <use xlink:href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="soc-list">
+            <li class="soc-list__item">
+              <a href="#" class="soc-list__linc"> Instagram </a>
+            </li>
+            <li class="soc-list__item">
+              <a href="#" class="soc-list__linc"> Twitter </a>
+            </li>
+            <li class="soc-list__item">
+              <a href="#" class="soc-list__linc"> Facebook </a>
+            </li>
+            <li class="soc-list__item">
+              <a href="#" class="soc-list__linc"> LinkedIn </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -80,7 +126,8 @@
               </div>
               <h3 class="feature-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="feature-list__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
             <li class="feature-list__item">
@@ -91,7 +138,8 @@
               </div>
               <h3 class="feature-list__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="feature-list__text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
             <li class="feature-list__item">
@@ -113,7 +161,8 @@
               </div>
               <h3 class="feature-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="feature-list__text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
@@ -126,19 +175,34 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="examples-list">
             <li class="examples-list__item">
-              <img src="./images/box-1.jpg" alt="Застосунки" width="370" height="294" />
+              <img
+                src="./images/box-1.jpg"
+                alt="Застосунки"
+                width="370"
+                height="294"
+              />
               <div class="examples-list__box">
                 <p class="examples-list__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="examples-list__item">
-              <img src="./images/box-2.jpg" alt="Мобільні додатки" width="370" height="294" />
+              <img
+                src="./images/box-2.jpg"
+                alt="Мобільні додатки"
+                width="370"
+                height="294"
+              />
               <div class="examples-list__box">
                 <p class="examples-list__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="examples-list__item">
-              <img src="./images/box-3.jpg" alt="Дизайн" width="370" height="294" />
+              <img
+                src="./images/box-3.jpg"
+                alt="Дизайн"
+                width="370"
+                height="294"
+              />
               <div class="examples-list__box">
                 <p class="examples-list__text">Дизайнерські рішення</p>
               </div>
@@ -153,7 +217,13 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img class="team-list__img" src="./images/team-1.jpg" alt="Перший член команди" width="270" height="260" />
+              <img
+                class="team-list__img"
+                src="./images/team-1.jpg"
+                alt="Перший член команди"
+                width="270"
+                height="260"
+              />
               <h3 class="team-list__title">Ігор Дем'яненко</h3>
               <p class="team-list__text" lang="en">Product Designer</p>
               <ul class="social-list">
@@ -188,7 +258,13 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img class="team-list__img" src="./images/team-2.jpg" alt="Другий член команди" width="270" height="260" />
+              <img
+                class="team-list__img"
+                src="./images/team-2.jpg"
+                alt="Другий член команди"
+                width="270"
+                height="260"
+              />
               <h3 class="team-list__title">Ольга Рєпіна</h3>
               <p class="team-list__text" lang="en">Frontend Developer</p>
               <ul class="social-list">
@@ -223,7 +299,13 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img class="team-list__img" src="./images/team-3.jpg" alt="Третій член команди" width="270" height="260" />
+              <img
+                class="team-list__img"
+                src="./images/team-3.jpg"
+                alt="Третій член команди"
+                width="270"
+                height="260"
+              />
               <h3 class="team-list__title">Микола Тарасов</h3>
               <p class="team-list__text" lang="en">Marketing</p>
               <ul class="social-list">
@@ -258,7 +340,8 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img class="team-list__img"
+              <img
+                class="team-list__img"
                 src="./images/team-4.jpg"
                 alt="Четвертий член команди"
                 width="270"
@@ -363,15 +446,22 @@
           <address class="address">
             <ul>
               <li class="address__item">
-                <a href="https://goo.gl/maps/Vfk3iaPY69gmRe3H6" class="addrem__map">
+                <a
+                  href="https://goo.gl/maps/Vfk3iaPY69gmRe3H6"
+                  class="addrem__map"
+                >
                   м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link"> info@devstudio.com </a>
+                <a href="mailto:info@devstudio.com" class="address__link">
+                  info@devstudio.com
+                </a>
               </li>
               <li class="address__item">
-                <a href="tel:+380961111111" class="address__link"> +38 096 111 11 11 </a>
+                <a href="tel:+380961111111" class="address__link">
+                  +38 096 111 11 11
+                </a>
               </li>
             </ul>
           </address>
@@ -447,7 +537,9 @@
         </button>
 
         <form action="" class="form-order">
-          <b class="form-order__title">Залиште свої дані, ми вам передзвонимо</b>
+          <b class="form-order__title"
+            >Залиште свої дані, ми вам передзвонимо</b
+          >
           <ul class="form-order__list">
             <li class="form-order__item">
               <label class="form-order__lable">
@@ -489,12 +581,19 @@
           </ul>
 
           <label class="form-order__chech">
-            <input type="checkbox" class="form-order__checkbox visually-hidden" />
-            <svg class="icon form-order__checkbox-icon form-order__check-on" width="16" height="15">
-              <use xlink:href="./images/icons.svg#icon-check-on"></use>
-            </svg>
-            <svg class="icon form-order__checkbox-icon form-order__check-off" width="16" height="15">
-              <use xlink:href="./images/icons.svg#icon-check-off"></use>
+            <input
+              type="checkbox"
+              class="form-order__checkbox visually-hidden"
+            />
+            <svg class="icon form-order__checkbox-icon" width="16" height="15">
+              <use
+                class="form-order__check-on"
+                xlink:href="./images/icons.svg#icon-check-on"
+              ></use>
+              <use
+                class="form-order__check-off"
+                xlink:href="./images/icons.svg#icon-check-off"
+              ></use>
             </svg>
             <p class="form-order__checkbox-text">
               Погоджуюся з розсилкою та приймаю
@@ -508,5 +607,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

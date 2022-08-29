@@ -3,27 +3,100 @@
   border-bottom: 1px solid #ececec;
 }
 
+.header {
+  position: relative;
+  z-index: 1;
+}
+
 .header__container {
-  // display: flex;
-  // padding-top: 0;
-  // padding-bottom: 0;
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: center;
 }
 
 /* Nav */
-.site-nav {
-  // display: flex;
-  // align-items: center;
+.header__menu {
+  width: 100%;
+  // opacity: 0;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    // transform: translateY(+100%);
+    background-color: var(--primary-white-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.menu-btn {
+  margin-left: auto;
+  z-index: 999;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.icon-close {
+  opacity: 0;
+}
+
+.is-open .icon-open {
+  opacity: 0;
+}
+
+.is-open .icon-close {
+  opacity: 1;
 }
 
 .site-nav__list {
-  // display: flex;
+  @media screen and (max-width: 767px) {
+    max-width: 400px;
+    margin-bottom: 302px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .site-nav__linc,
 .header-address__linc {
-  // display: flex;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
   align-items: center;
 
   transition: color 250ms var(--primary-animation);
@@ -42,6 +115,17 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    line-height: 1.175;
+  }
 }
 
 .site-nav__linc--current {
@@ -59,25 +143,70 @@
 
     background-color: var(--accent-color);
     border-radius: 2px;
+
+    @media screen and (max-width: 767px) {
+      visibility: hidden;
+    }
   }
 }
 
 .site-nav__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
   }
-}
 
-.header-address__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .header-address {
-  // display: flex;
-  // margin-left: auto;
-  // align-items: center;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 400px;
+    margin-bottom: 64px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+
+.header-address__item {
+  @media screen and (max-width: 767px) {
+    &:not(:first-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 
 .header-address__linc {
@@ -87,10 +216,35 @@
   letter-spacing: 0.02em;
   text-decoration: none;
 
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.167;
+  }
+
   transition: color 250ms var(--primary-animation);
 
   &:hover,
   &:focus {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  & > .icon {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.header-address__linc--accent {
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 40px;
     color: var(--accent-color);
   }
 }
@@ -102,3 +256,5 @@
 .header-address__icon-phone {
   margin-right: 7px;
 }
+
+
