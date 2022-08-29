@@ -1072,6 +1072,8 @@ img {
 
 .soc-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .soc-list {
@@ -1092,7 +1094,6 @@ img {
 }
 
 .soc-list__item:not(:last-child) {
-  margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
