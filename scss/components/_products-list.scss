@@ -150,3 +150,9 @@
   line-height: 1.88;
   color: var(--primary-text-color);
 }
+
+.products-list__img--size {
+    height: 294px; 
+}
+
+@include bg-img ("products", 9);
