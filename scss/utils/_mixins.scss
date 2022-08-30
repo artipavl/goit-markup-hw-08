@@ -1,11 +1,11 @@
 @mixin bg-img($name, $number) {
   @for $var from 1 to $number + 1 {
-    .#{$name}-list__img-#{$var} {
+    .#{$name}-list__img--#{$var} {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      width: 100%;
-      height: 100%;
+      // width: 100%;
+      // height: 100%;
       @media screen and (max-width: 767px) {
         background-image: url("../images/#{$name}/#{$name}-#{$var}/#{$name}-480.jpg");
         @media (min-device-pixel-ratio: 2),
