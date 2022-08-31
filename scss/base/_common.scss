@@ -7,3 +7,7 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
 }
+
+.body--hidden {
+  overflow: hidden;
+}

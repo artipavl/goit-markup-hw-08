@@ -8,7 +8,8 @@
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
   
-    function toggleModal() {
+  function toggleModal() {
+      document.body.classList.toggle("body--hidden")
       refs.modal.classList.toggle("is-hidden");
     }
 })();

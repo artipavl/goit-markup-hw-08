@@ -30,8 +30,19 @@
         <a href="./index.html" lang="en" class="logo header__logo">
           <span class="logo__accent">Web</span>Studio
         </a>
-        <button type="button" class="menu-btn" data-menu-button>
-          <svg class="icon" width="40" height="40">
+        <button
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="header__menu"
+          data-menu-button
+        >
+          <svg
+            class="icon"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
             <use
               class="icon-open"
               xlink:href="./images/icons.svg#icon-menu"
@@ -43,7 +54,7 @@
           </svg>
         </button>
 
-        <div class="header__menu" data-menu>
+        <div class="header__menu" id="header__menu" data-menu>
           <nav class="site-nav">
             <ul class="site-nav__list">
               <li class="site-nav__item">

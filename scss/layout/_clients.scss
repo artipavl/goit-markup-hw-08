@@ -37,19 +37,9 @@
   }
 
 
-  // @media screen and (max-width: 449px) {
-  //   width: 100%;
-  // }
-
   @media screen and (min-width: 480px) {
     width: 210px;
   }
-
-  // @media screen and (max-width: 767px) {
-  //   &:not(:last-child) {
-  //     margin-bottom: 30px;
-  //   }
-  // }
 
   @media screen and (min-width: 768px) {
     width: 226px;
@@ -60,6 +50,3 @@
   }
 }
 
-// .company-list__linc .svg {
-//   margin: auto;
-// }

@@ -8,6 +8,10 @@ body {
   background-color: var(--primary-white-color);
 }
 
+.body--hidden {
+  overflow: hidden;
+}
+
 /* базові списки */
 html {
   box-sizing: border-box;
@@ -650,11 +654,14 @@ img {
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  z-index: 3;
   transition: opacity 250ms var(--primary-animation), visibility 25000ms var(--primary-animation);
 }
 @media screen and (max-width: 767px) {
   .backdrop {
     padding-top: 93px;
+    padding-bottom: 93px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -662,6 +669,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .backdrop {
     padding-top: 208px;
+    padding-bottom: 208px;
   }
 }
 
