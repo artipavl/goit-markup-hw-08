@@ -1459,17 +1459,28 @@ img {
 }
 
 /* Постійні клієнти */
-@media screen and (min-width: 480px) {
-  .company-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-@media screen and (max-width: 479px) {
-  .company-list__item:not(:last-child) {
-    margin-bottom: 30px;
+.company-list__item {
+  height: 92px;
+}
+@media screen and (max-width: 767px) {
+  .company-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .company-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-list__item {
+    width: calc((100% - 150px) / 6);
   }
 }
 
@@ -1478,7 +1489,7 @@ img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 92px;
+  height: 100%;
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
   color: var(--primary-icon-color);
@@ -1487,21 +1498,6 @@ img {
 .company-list__linc:hover, .company-list__linc:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-}
-@media screen and (min-width: 480px) {
-  .company-list__linc {
-    width: 210px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .company-list__linc {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .company-list__linc {
-    width: 170px;
-  }
 }
 
 /* Чим ми займаємося */
