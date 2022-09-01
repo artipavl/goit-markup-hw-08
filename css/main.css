@@ -1562,121 +1562,6 @@ img {
   color: var(--primary-white-color);
 }
 
-.exemples-list__img--size {
-  height: 294px;
-}
-
-.exemples-list__img--1 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/exemples/exemples-1/exemples-480.jpg");
-}
-@media screen and (max-width: 767px) {
-  .exemples-list__img--1 {
-    background-image: url("../images/exemples/exemples-1/exemples-480.jpg");
-  }
-}
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .exemples-list__img--1 {
-    background-image: url("../images/exemples/exemples-1/exemples-480@2x.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .exemples-list__img--1 {
-    background-image: url("../images/exemples/exemples-1/exemples-768.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
-  .exemples-list__img--1 {
-    background-image: url("../images/exemples/exemples-1/exemples-768@2x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .exemples-list__img--1 {
-    background-image: url("../images/exemples/exemples-1/exemples-1600.jpg");
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .exemples-list__img--1 {
-    background-image: url("../images/exemples/exemples-1/exemples-1600@2x.jpg");
-  }
-}
-
-.exemples-list__img--2 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/exemples/exemples-2/exemples-480.jpg");
-}
-@media screen and (max-width: 767px) {
-  .exemples-list__img--2 {
-    background-image: url("../images/exemples/exemples-2/exemples-480.jpg");
-  }
-}
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .exemples-list__img--2 {
-    background-image: url("../images/exemples/exemples-2/exemples-480@2x.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .exemples-list__img--2 {
-    background-image: url("../images/exemples/exemples-2/exemples-768.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
-  .exemples-list__img--2 {
-    background-image: url("../images/exemples/exemples-2/exemples-768@2x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .exemples-list__img--2 {
-    background-image: url("../images/exemples/exemples-2/exemples-1600.jpg");
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .exemples-list__img--2 {
-    background-image: url("../images/exemples/exemples-2/exemples-1600@2x.jpg");
-  }
-}
-
-.exemples-list__img--3 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/exemples/exemples-3/exemples-480.jpg");
-}
-@media screen and (max-width: 767px) {
-  .exemples-list__img--3 {
-    background-image: url("../images/exemples/exemples-3/exemples-480.jpg");
-  }
-}
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .exemples-list__img--3 {
-    background-image: url("../images/exemples/exemples-3/exemples-480@2x.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .exemples-list__img--3 {
-    background-image: url("../images/exemples/exemples-3/exemples-768.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
-  .exemples-list__img--3 {
-    background-image: url("../images/exemples/exemples-3/exemples-768@2x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .exemples-list__img--3 {
-    background-image: url("../images/exemples/exemples-3/exemples-1600.jpg");
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .exemples-list__img--3 {
-    background-image: url("../images/exemples/exemples-3/exemples-1600@2x.jpg");
-  }
-}
-
 /* Особливості */
 @media screen and (min-width: 768px) {
   .feature-list {
@@ -1852,7 +1737,6 @@ img {
 }
 
 .team-list__title {
-  padding-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
