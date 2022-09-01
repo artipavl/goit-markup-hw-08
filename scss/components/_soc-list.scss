@@ -3,6 +3,11 @@
   flex-wrap: wrap;
   gap: 10px;
 
+  @media screen and (max-width: 340px) {
+    width: calc(100% - 40px);
+    justify-content: space-between;
+  }
+
   @media screen and (min-width: 481px) and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
@@ -19,10 +24,12 @@
 }
 
 .soc-list__item {
-  &:not(:last-child) {
-    // margin-right: 10px;
-    padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  @media screen and (min-width: 341px) {
+    &:not(:last-child) {
+      // margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
   }
 }
 
@@ -42,5 +49,10 @@
   &:hover,
   &:focus {
     color: var(--primary-black-color);
+  }
+
+  @media screen and (max-width: 340px) {
+    font-size: 20px;
+    padding: 10px;
   }
 }

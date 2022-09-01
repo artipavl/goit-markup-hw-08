@@ -18,11 +18,13 @@
 /* Nav */
 .header__menu {
   width: 100%;
-  // opacity: 0;
   @media screen and (max-width: 767px) {
     position: absolute;
     left: 0;
     top: 0;
+
+    height: 100vh;
+    overflow-y: scroll;
 
     opacity: 0;
     pointer-events: none;
@@ -115,7 +117,7 @@
   &:focus {
     color: var(--accent-color);
   }
-
+  
   @media screen and (min-width: 768px) {
     display: flex;
     padding-top: 32px;
@@ -242,7 +244,13 @@
 }
 
 .header-address__linc--accent {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 340px) {
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 341px) and (max-width: 767px) {
     font-size: 34px;
     line-height: 40px;
     color: var(--accent-color);
@@ -256,5 +264,3 @@
 .header-address__icon-phone {
   margin-right: 7px;
 }
-
-
