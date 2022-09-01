@@ -424,7 +424,13 @@ img {
   opacity: 1;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 467px) {
+  .site-nav__list {
+    max-width: 400px;
+    margin-bottom: 151px;
+  }
+}
+@media screen and (min-width: 468px) and (max-width: 767px) {
   .site-nav__list {
     max-width: 400px;
     margin-bottom: 302px;
