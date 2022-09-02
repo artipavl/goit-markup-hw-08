@@ -89,18 +89,6 @@
   }
 }
 
-.social-list__linc--colors {
-  background-color: #44454e;
-  color: var(--primary-white-color);
-
-  transition: background-color 250ms var(--primary-animation);
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
-}
-
 .footer-sub {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 60px;

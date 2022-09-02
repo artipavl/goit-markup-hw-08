@@ -30,3 +30,15 @@
     background-color: var(--accent-color);
   }
 }
+
+.social-list__linc--colors {
+  background-color: #44454e;
+  color: var(--primary-white-color);
+
+  transition: background-color 250ms var(--primary-animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
