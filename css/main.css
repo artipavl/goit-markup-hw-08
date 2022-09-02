@@ -247,15 +247,6 @@ img {
   }
 }
 
-.social-list__linc--colors {
-  background-color: #44454e;
-  color: var(--primary-white-color);
-  transition: background-color 250ms var(--primary-animation);
-}
-.social-list__linc--colors:hover, .social-list__linc--colors:focus {
-  background-color: var(--accent-color);
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-sub {
     margin-top: 60px;
@@ -767,9 +758,6 @@ img {
 .form-order__list {
   margin-bottom: 20px;
   display: block;
-}
-.form-order__list:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .form-order__lable {
@@ -1443,6 +1431,15 @@ img {
 }
 .social-list__linc:hover, .social-list__linc:focus {
   color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.social-list__linc--colors {
+  background-color: #44454e;
+  color: var(--primary-white-color);
+  transition: background-color 250ms var(--primary-animation);
+}
+.social-list__linc--colors:hover, .social-list__linc--colors:focus {
   background-color: var(--accent-color);
 }
 
